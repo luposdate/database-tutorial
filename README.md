@@ -8,7 +8,7 @@ Users can create their own tables and insert their own data. They can also try o
 
 ## Starting the Applet
 
-The main class is Tutorial.java of the tutorial package.
+The main class is Tutorial.java of the tutorial package. The tutorial can be tested [here](http://www.ifis.uni-luebeck.de/index.php?id=database-tutorial).
 
 ## User Guide
 
