@@ -13,22 +13,22 @@ The main class is Tutorial.java of the tutorial package.
 ## User Guide
 
 This is a database course tutorial application. You can easily execute different database languages. Supported languages are:
-- 1. SQL
-- 2. Relational Algebra Expressions (Supported features are: selection, projection, Cartesian product, union, complement, rename, assignment, join, intersection)
-- 3. Tuple Calculus
-- 4. Domain Calculus
+- SQL
+- Relational Algebra Expressions (Supported features are: selection, projection, Cartesian product, union, complement, rename, assignment, join, intersection)
+- Tuple Calculus
+- Domain Calculus
 
 The database already has 4 tables with some testing data, they are:
-- 1. Flug (flugnummer int not null, ursprung varchar(30) not null, ziel varchar(30) not null, distanz int not null, abflugzeit int not null, ankunftzeit int not null, primary key(flugnummer))
-- 2. Mitarbeiter (personalnummer char(10) not null, name varchar(30) not null, gehalt int not null, primary key(personalnummer))
-- 3. Flugzeug (flugzeugnummer int not null, name varchar(30) not null, reichweite int not null, primary key (flugzeugnummer))
-- 4. Zertifiziert (personalnummer char(10) not null, flugzeugnummer int not null, primary key (personalnummer, flugzeugnummer), foreign key (personalnummer) references mitarbeiter, foreign key (flugzeugnummer) references flugzeug)
+- Flug (flugnummer int not null, ursprung varchar(30) not null, ziel varchar(30) not null, distanz int not null, abflugzeit int not null, ankunftzeit int not null, primary key(flugnummer))
+- Mitarbeiter (personalnummer char(10) not null, name varchar(30) not null, gehalt int not null, primary key(personalnummer))
+- Flugzeug (flugzeugnummer int not null, name varchar(30) not null, reichweite int not null, primary key (flugzeugnummer))
+- Zertifiziert (personalnummer char(10) not null, flugzeugnummer int not null, primary key (personalnummer, flugzeugnummer), foreign key (personalnummer) references mitarbeiter, foreign key (flugzeugnummer) references flugzeug)
 
 There are some basic rules concerning writing the expressions:
-- 1. All the expressions should be written in one line;
-- 2. One expression at a time;
-- 3. All the expressions should end with a semicolon (“;”);
-- 4. The join conditions for relational algebra need to be put in a pair of curve brackets (“{}”).
+- All the expressions should be written in one line;
+- One expression at a time;
+- All the expressions should end with a semicolon (“;”);
+- The join conditions for relational algebra need to be put in a pair of curve brackets (“{}”).
 
 On the left side of the applet, user can input all the queries and the generated SQL queries will be shown on the right side, and the result will be shown in the bottom.
 
